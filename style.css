@@ -1,0 +1,97 @@
+.bgcolor {
+    background: #000000;
+    --gap: 5em;
+    --line: 1px;
+    --color: rgba(255,255,255,0.2);
+    background-image: linear-gradient(
+        -90deg,
+        transparent calc(var(--gap) - var(--line)),
+        var(--color) calc(var(--gap) - var(--line) + 1px),
+        var(--color) var(--gap)
+    ),
+    linear-gradient(
+        0deg,
+        transparent calc(var(--gap) - var(--line)),
+        var(--color) calc(var(--gap) - var(--line) + 1px),
+        var(--color) var(--gap)
+    );
+    background-size: var(--gap) var(--gap);
+}
+
+.cont {
+    padding: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    border-radius: 25px;
+    background-color: #212121;
+    color: #FFFFFF;
+    font-family: Verdana, sans-serif;
+    border: 2px solid #FFFFFF;
+}
+
+.socials {
+    width: calc(100%/5);
+    min-width: 250px;
+    height: auto;
+    float: left;
+}
+
+button {
+    font-size: 18px;
+    color: #e1e1e1;
+    font-family: Verdana, sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+button:focus, button:hover {
+    color: #FFFF;
+}
+
+button:focus:after, button:hover:after {
+    width :100%;
+    left: 0%;
+}
+
+button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+list {
+    list-style-type: none;
+}
+
+.main {
+    width: auto;
+    height: auto;
+    padding: 1em;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    border-radius: 25px;
+    background-color: #212121;
+    color: #FFFFFF;
+    font-family: Verdana, sans-serif;
+    border: 2px solid #FFFFFF;
+}
