@@ -4,40 +4,77 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Shaira's Codefolio</title>
+    <link rel="icon" type="image/x-icon" href="images/mushrooms.png"/>
     <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body class="bgcolor">
     <!-- Stays in place; regardless of page -->
-    <header class="cont">
+    <header class="navbar">
         <nav>
+            <img src="images/mushrooms.png" alt="icon" class="icon">
             <button onclick="location.href='index.html'">Home</button>
             <button onclick="location.href='experiences.html'">Previews</button>
         </nav>
     </header>
-
     
     <section class="main">
-        
-    </section>
-    <footer >
-        <div class="cont">
-            <div class="socials">
-                <h3>My Socials:</h3>
-                <list>
-                    <li><button onclick="location.href='https://www.facebook.com/shairajane.sy'">Facebook</button></li>
-                    <li><button onclick="location.href='https://www.instagram.com/_apple.slices/'">Instagram</button></li>
-                    <li><button onclick="location.href='https://github.com/sy-yingjin'">Github</button></li>
-                </list>
+        <div class="mycard">
+            <img src="images/flowers.png" alt="flowers" class="face-details">
+            <img src="images/self.png" alt="pfp" class="face">
+            <h2>Shaira Jane Sy</h2>
+            <h4>Alternatively, Apple</h4>
+        </div>
+        <div class="descript">
+            <p>I have an interest in web development, visual design, project management, database management, and game design. Anything color, fun, and designing is a greenlight for me. I am willing to learn more to extend my experience in the field.</p>
+            <div class="abilities">
+  
+                <div class="skill-box">
+                  <span class="title">Python</span>
+                  <div class="skill-bar">
+                    <span class="skill-per python">
+                      <span class="tooltip">80%</span>
+                    </span>
+                  </div>
+                </div>
+              
+                <div class="skill-box">
+                  <span class="title">HTML + CSS</span>
+                  <div class="skill-bar">
+                    <span class="skill-per html">
+                      <span class="tooltip">90%</span>
+                    </span>
+                  </div>
+                </div>
+                
+                <div class="skill-box">
+                  <span class="title">Java</span>
+                  <div class="skill-bar">
+                    <span class="skill-per java">
+                      <span class="tooltip">50%</span>
+                    </span>
+                  </div>
+                </div>
+                
+                <div class="skill-box">
+                  <span class="title">postgre SQL</span>
+                  <div class="skill-bar">
+                    <span class="skill-per SQL">
+                      <span class="tooltip">90%</span>
+                    </span>
+                  </div>
+                </div>
             </div>
+
             <div class="socials">
-                <h3>Contact Me</h3>
-                <list>
-                    <li>Number</li>
-                    <li>Telegram</li>
-                </list>
+                <h3>Ways to Contact me:</h3>
+                <button onclick="location.href='https://www.facebook.com/shairajane.sy'">Facebook</button>
+                <button onclick="location.href='https://www.instagram.com/_apple.slices/'">Instagram</button>
+                <button onclick="location.href='https://github.com/sy-yingjin'">Github</button>
             </div>
         </div>
-    </footer>
+
+
+    </section>
 </body>
 </html>
