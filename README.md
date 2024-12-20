@@ -14,4 +14,3 @@
 - [Button Hover](https://uiverse.io/WhiteNervosa/popular-ladybug-27)
 - [Picrew Image](https://picrew.me/en/image_maker/2)
 - [Color Palette](https://coolors.co/212730-17395c-576a39-efb758-c24229-e1dcc9)
-- [Skill Box](https://uiverse.io/Juanes200122/ordinary-dodo-95)

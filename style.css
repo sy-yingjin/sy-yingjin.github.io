@@ -8,194 +8,128 @@
   src: url(fonts/Cute_Aurora_demo.ttf);
 }
 
+img { border: 4px solid #EFB758; }
+
+p { font-size: 22px; }
+
 /* Background pattern */
 .bgcolor {
-    background: #E1DCC9;
-    --gap: 5em;
-    --line: 1px;
-    --color: #212730;
-    background-image: linear-gradient(
-        -90deg,
-        transparent calc(var(--gap) - var(--line)),
-        var(--color) calc(var(--gap) - var(--line) + 1px),
-        var(--color) var(--gap)
-    ),
-    linear-gradient(
-        0deg,
-        transparent calc(var(--gap) - var(--line)),
-        var(--color) calc(var(--gap) - var(--line) + 1px),
-        var(--color) var(--gap)
-    );
-    background-size: var(--gap) var(--gap);
+  background: #E1DCC9;
+  --gap: 5em;
+  --line: 1px;
+  --color: #212730;
+  background-image: linear-gradient(
+    -90deg,
+    transparent calc(var(--gap) - var(--line)),
+    var(--color) calc(var(--gap) - var(--line) + 1px),
+    var(--color) var(--gap)
+  ),
+  linear-gradient(
+    0deg,
+    transparent calc(var(--gap) - var(--line)),
+    var(--color) calc(var(--gap) - var(--line) + 1px),
+    var(--color) var(--gap)
+  );
+  background-size: var(--gap) var(--gap);
 }
 
 /* Header stuff */
 .navbar {
-    padding: 0.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    border-radius: 25px;
-    background-color: #212730;
-    font-family: "Cherry Bomb";
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border: 4px solid #EFB758;
+  border-radius: 25px;
+  background-color: #212730;
+  font-family: "Cherry Bomb";
 }
 
 .icon {
-    height: 85px;
-    width: auto;
-    padding-right: 2em;
+  height: 85px;
+  width: auto;
+  padding-right: 2em;
+  border: none;
 }
 
 /* Main page */
 .main {
-    display: flex;
-    padding: 1.5em;
-    flex-flow: wrap;
-    min-width: 300px;
-    align-items: center;
-    justify-content: center;
-    margin: 1em;
-    border-radius: 25px;
-    background-color: #212730;
-    color: #E1DCC9;
-    font-family: "Cute Aurora";
-    border: 4px solid #EFB758;
+  width: 85%;
+  height: 100%;
+  display: flex;
+  padding: 1.25em;
+  flex-flow: wrap;
+  min-width: 300px;
+  text-align: center;
+  margin: auto;
+  margin-top: 1em;
+  border-radius: 25px;
+  background-color: #212730;
+  color: #E1DCC9;
+  font-family: "Cute Aurora";
+  border: 4px solid #EFB758;
 }
 
 .mycard {
-    width: 25%;
-    min-width: 200px;
-    height: auto;
-    margin: auto;
-    text-align: center;
-    flex-grow: 1;
+  width: 25%;
+  min-width: 200px;
+  margin: auto;
+  padding: 2em 1em;
+  flex-grow: 1;
 }
 
 .face {
-    display: block;
-    max-width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-    border: 4px solid #EFB758;
+  display: block;
+  max-width: 200px;
+  margin: auto;
+  border-radius: 50%;
 }
 
 .face-details {
-    max-width: 100px;
-    position: absolute;
-    transform: translateX(-125%) translateY(-15%) rotate(20deg);
+  max-width: 100px;
+  position: absolute;
+  transform: translateX(-125%) translateY(-15%) rotate(20deg);
+  border: none;
 }
 
 .descript {
-    display: block;
-    width: 65%;
-    min-width: 400px;
-    height: auto;
-    margin: auto;
-    flex-grow: 1;
+  display: block;
+  width: 65%;
+  min-width: 400px;
+  margin: auto;
+  flex-grow: 1;
 }
 
-p { font-size: 20px; }
-
-.texts {
-    padding: 0 3em 0.5em;
-    text-align: justify;
-}
-
-/* Skillset box
- Code yoinked from UIverse
-https://uiverse.io/Juanes200122/ordinary-dodo-95 */
-
-.abilities {
-    max-width: calc(45%);
-    min-width: 400px;
-    background: #E1DCC9;
-    margin: auto;
-    padding: 3px 20px;
-    border-radius: 8px;
-  }
-  
-  .abilities .skill-box {
-    margin: 15px 0;
-  }
-  
-  .skill-box .title {
-    display: block;
-    font-size: 16px;
-    font-weight: 600;
-    color: #212730;
-  }
-  
-  .skill-box .skill-bar {
-    height: 8px;
-    width: 100%;
-    border-radius: 6px;
-    margin-top: 6px;
-    background: #EFB758;
-  }
-  
-  .skill-bar .skill-per {
-    position: relative;
-    display: block;
-    height: 100%;
-    width: 90%;
-    border-radius: 6px;
-    background: #C24229;
-  }
-  
-  .skill-per.python {
-    width: 80%;
-  }
-  
-  .skill-per.html {
-    width: 90%;
-  }
-  
-  .skill-per.java {
-    width: 50%;
-  }
-  
-  .skill-per.SQL {
-    width: 90%;
-  }
-  
-  .skill-per .tooltip {
-    position: absolute;
-    right: -14px;
-    top: -28px;
-    font-size: 9px;
-    font-weight: 300;
-    color: #E1DCC9;
-    padding: 2px 6px;
-    border-radius: 3px;
-    background: #C24229;
-    z-index: 1;
-  }
-  
-  .tooltip::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -2px;
-    height: 10px;
-    width: 10px;
-    z-index: -1;
-    background-color: #C24229;
-    transform: translateX(-50%) rotate(45deg);
-  }
-  
+.texts { padding: 0 4em; }
 
 .socials {
-    padding-top: 2em;
-    display: block;
-    text-align: center;
-    margin: auto;
+  display: block;
+  margin: auto;
 }
+
+.socialdetails {
+  max-width: 125px;
+  position: relative;
+  border: none;
+}
+
+/* Experiences page */
+.demo {
+  display:inline;
+  margin: auto;
+  width: 250px;
+  max-width: 250px;
+  padding: 0.25em;
+}
+
+.title { color: #EFB758; }
+
+.tags { color: #576A39; }
 
 /* Button customization */
 button {
-    font-size: 24px;
+    font-size: 28px;
     color: #EFB758;
     font-family: "Cherry Bomb";
     font-weight: 300;
@@ -230,8 +164,4 @@ button:after {
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: width, left;
-}
-
-list {
-    list-style-type: none;
 }
